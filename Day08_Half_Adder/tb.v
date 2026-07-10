@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+//Krishna Patel
 module tb();
 
 reg p, q;
