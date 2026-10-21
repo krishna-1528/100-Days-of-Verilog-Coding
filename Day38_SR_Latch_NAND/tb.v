@@ -14,13 +14,10 @@ initial begin
 $display("Time  |  P  T  |  Y  Yn");
 $monitor("%t, %b, %b, %b, %b", $time, P, T, Y, Yn);
 
-        P = 0; T = 1; #10;
-
-//Test cases
-        P = 0; T = 0; #10;
-        P = 0; T = 1; #10;
-        P = 1; T = 0; #10;
-        P = 1; T = 1; #10;
+    P = 0; T = 1; #10; 
+    P = 1; T = 1; #10; 
+    P = 1; T = 0; #10; 
+    P = 1; T = 1; #10;
 
 $finish;
 end
