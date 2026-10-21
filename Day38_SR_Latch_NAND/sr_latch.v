@@ -8,7 +8,7 @@ module sr_latch(        // SR Latch NAND Gate
                 output  Qn // Complementary output Qn or say Q'
 );
 
-            assign Q  = ~(R | Qn);
-            assign Qn = ~(S | Q);
+            assign Q  = ~(S | Qn);
+            assign Qn = ~(R | Q);
 
 endmodule
